@@ -7,7 +7,7 @@ export default function reducer(state = { rows: [] }, action){
     switch(action.type){
         case actions.ROW_ADDED: {
             return produce(state, newState => {
-                let nextId = newState.rows.length + 1;
+                let nextId = newState.rows.length;
                 newState.rows.push({
                     id: ++nextId,
                     text: action.payload.text

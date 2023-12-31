@@ -22,7 +22,7 @@ const handleRemoveClick = () => {
   const currentState = store.getState();
 
   if (currentState.rows.length > 0) {
-    // Dispatch a ROW_REMOVED action with the ID of the last item
+
     store.dispatch(rowRemoved(currentState.rows.length));
   }
 };
